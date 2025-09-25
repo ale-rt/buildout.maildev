@@ -12,5 +12,5 @@ py3/bin/pip3:
 custom.cfg:
 	[ -e custom.cfg ] || touch custom.cfg
 
-.installed.cfg: py3/bin/buildout buildout.cfg custom.cfg
+.installed.cfg: py3/bin/buildout buildout.cfg custom.cfg config/base.cfg
 	./py3/bin/buildout
